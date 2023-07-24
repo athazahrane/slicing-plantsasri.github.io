@@ -25,6 +25,10 @@
     margin-left: 10vh;
 }
 
+.collapse .btn {
+  
+}
+
 .content {
     width: 100%;
 
@@ -117,41 +121,15 @@
     align-items: center;
 }
 
-/* countreis */
+/* countries */
 .countries {
-  /* Add your styles for the countries section here */
+  background-image: url('img/shapes.png');
+  background-repeat: no-repeat;
+  background-size:contain;
 }
 
-.countries .container {
-  /* Add your styles for the container here */
-}
-
-.countries h1 {
-
-}
-
-.countries .countries-list {
-  /* Add your styles for the countries list here */
-}
-
-.countries .col-md-6 {
-  display: flex;
-  justify-content: center;
-}
-
-.countries .col-md-6 img {
-  max-width: 100%;
-  height: auto;
-  margin: 10px;
-  display: inline-block; 
-}
-
-/* Responsiveness for smaller screens */
-@media (max-width: 768px) {
-  .countries .col-md-6 {
-    flex-direction: column;
-    align-items: center;
-  }
+.countries-items img {
+  margin: 3px 3px;
 }
 
 /* testimoni */
@@ -161,12 +139,18 @@
     flex-wrap: wrap;
   }
   
-  .testimonial-item {
+  .testimoni-items {
     flex: 1;
     margin: 0 20px;
     text-align: center;
   }
   
+  .testimoni-items img {
+    width: 100px;
+    margin-bottom: 50px;
+    margin-left: 110px;
+  }
+
   @media (max-width: 768px) {
     .testimonial-item {
       flex: 1 0 100%;
@@ -206,6 +190,24 @@
       width: 100%;
     }
   }
+
+/* Partnership */
+.partnership .container{
+  background-color: azure;
+  border-radius: 5px;
+}
+.partnership img{
+  width: 100px  ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 16px;
+  padding: 1.2rem 1.5rem;
+  margin: 0.7rem 1rem;
+}
+
   
 /* contact */
 .contact-us {
