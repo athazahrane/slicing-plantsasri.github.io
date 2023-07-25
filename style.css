@@ -4,63 +4,68 @@
     flex-direction: column;
     align-items: center;
   }
+
   .nav-item {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
   .collapse.navbar-collapse {
     display: none;
   }
+
   .collapse.navbar-collapse.show {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .navbar-toggler {
     display: block;
   }
 }
 
 .collapse {
-    margin-left: 10vh;
+  margin-left: 10vh;
 }
 
-.collapse .btn {
-  
-}
+.collapse .btn {}
 
 .content {
-    width: 100%;
+  width: 100%;
 
 }
 
 .img-content {
-    width: 100%; /* Mengatur lebar gambar menjadi 100% dari parent container */
-    max-width: 100%; /* Batasi lebar maksimum gambar */
-    height: auto; /* Menyesuaikan tinggi gambar secara proporsional */
+  width: 100%;
+  /* Mengatur lebar gambar menjadi 100% dari parent container */
+  max-width: 100%;
+  /* Batasi lebar maksimum gambar */
+  height: auto;
+  /* Menyesuaikan tinggi gambar secara proporsional */
 
 }
 
 .slider {
-    background-image: url('img/img2.png');
-    min-height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
+  background-image: url('img/img2.png');
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
 }
 
 .slick-prev::before {
-    content: "" !important;
+  content: "" !important;
 }
 
 .slick-next::before {
-    content: "" !important;
+  content: "" !important;
 }
 
-.about-us .row .col-md-4 img{
-    width: 350px;
+.about-us .row .col-md-4 img {
+  width: 350px;
 }
 
 
@@ -74,58 +79,64 @@
         padding: 40px;
 } */
 .services {
-    padding: 30px 0;
+  padding: 30px 0;
 }
+
 .services-information .card {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
+
 .services-information .card h3 {
-    font-size: 20px;
+  font-size: 20px;
 }
+
 .services-information .card p {
-    font-size: 16px;
+  font-size: 16px;
 }
+
 .services-information .image {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 @media (max-width: 768px) {
-    .services-information .row {
-        flex-direction: column;
-    }
-    .services-information .card {
-        margin: 0 auto;
-    }
-    .services-information .image {
-        text-align: center;
-    }
+  .services-information .row {
+    flex-direction: column;
+  }
+
+  .services-information .card {
+    margin: 0 auto;
+  }
+
+  .services-information .image {
+    text-align: center;
+  }
 }
 
 
 /* card phone */
 .card-phone {
-    padding-top: 80px;
+  padding-top: 80px;
 }
 
-.card-phone .container{
-    border-radius: 25px;
-    background: linear-gradient(149deg, #108BBC 0%, #02C39A 100%);
-    height: 400px;
-    width: 1100px;
-    margin-top: 50px;
-    flex-wrap: wrap;
+.card-phone .container {
+  border-radius: 25px;
+  background: linear-gradient(149deg, #108BBC 0%, #02C39A 100%);
+  height: 400px;
+  width: 1100px;
+  margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .phone {
-    width: 200px;
-    align-items: center;
+  width: 200px;
+  align-items: center;
 }
 
 /* countries */
 .countries {
   background-image: url('img/shapes.png');
   background-repeat: no-repeat;
-  background-size:contain;
+  background-size: contain;
 }
 
 .countries-items img {
@@ -134,145 +145,188 @@
 
 /* testimoni */
 .testimoni .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .testimoni-items {
-    flex: 1;
-    margin: 0 20px;
-    text-align: center;
-  }
-  
-  .testimoni-items img {
-    width: 100px;
-    margin-bottom: 50px;
-    margin-left: 110px;
-  }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  @media (max-width: 768px) {
-    .testimonial-item {
-      flex: 1 0 100%;
-      margin-bottom: 30px;
-    }
+.testimoni-items {
+  flex: 1;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.testimoni-items img {
+  width: 100px;
+  margin-bottom: 50px;
+  margin-left: 110px;
+}
+
+@media (max-width: 768px) {
+  .testimonial-item {
+    flex: 1 0 100%;
+    margin-bottom: 30px;
   }
-  
+}
+
 
 .testimonial-item {
-    margin-top: 80px;
-  }
-  
-  .testimonial-item img {
-    width: 100%;
-    max-width: 150px;
-  }
-  
-  .testimonial-item p {
+  margin-top: 80px;
+}
+
+.testimonial-item img {
+  width: 100%;
+  max-width: 150px;
+}
+
+.testimonial-item p {
+  margin-top: 30px;
+}
+
+.testimonial-name {
+  color: rgb(54, 217, 65);
+  margin-left: 50px;
+}
+
+.testimoni-items br {
+  color: green;
+}
+
+@media (max-width: 768px) {
+  .testimonial-item {
     margin-top: 30px;
   }
-  
-  .testimonial-name {
-    color: rgb(54, 217, 65);
-    margin-left: 50px;
-  }
-  
-  @media (max-width: 768px) {
-    .testimonial-item {
-      margin-top: 30px;
-    }
-  
-    .testimonial-item img {
-      margin-bottom: 20px;
-    }
-  
-    .testimonial-item p {
-      width: 100%;
-    }
+
+  .testimonial-item img {
+    margin-bottom: 20px;
   }
 
+  .testimonial-item p {
+    width: 100%;
+  }
+}
+
 /* Partnership */
-.partnership .container{
+.partnership .container {
   background-color: azure;
   border-radius: 5px;
 }
-.partnership img{
-  width: 100px  ;
+
+.partnership-items {
+  min-height: 100px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 16px;
   padding: 1.2rem 1.5rem;
   margin: 0.7rem 1rem;
+  flex-wrap: wrap;
 }
 
-  
+.partnership img {
+  width: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .partnership-items {
+    margin: 0.7rem 0.5rem;
+    padding: 0.8rem 1rem;
+    flex-basis: calc(50% - 2rem); /* Mengatur lebar elemen agar 2 elemen per baris */
+  }
+
+  .partnership img {
+    width: 30px;
+  }
+}
+
+/* Style untuk ukuran layar sedang (contoh: tablet) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .partnership-items {
+    flex-basis: calc(33.333% - 2rem); /* Mengatur lebar elemen agar 3 elemen per baris */
+  }
+
+  .partnership img {
+    width: 40px;
+  }
+}
+
+/* Style untuk ukuran layar besar (contoh: desktop) */
+@media screen and (min-width: 1024px) {
+  /* .partnership-items {
+    flex-basis: calc(20% - 2rem);
+  }
+
+  .partnership img {
+    width: 50px;
+  }
+} */
+
 /* contact */
 .contact-us {
-    padding: 30px 0;
-  }
-
-  .g-maps {
-    width: 100%;
-    height: 100%;
+  padding: 30px 0;
 }
 
-  
-  .contact-us h1 {
-    text-align: center;
-    margin-bottom: 20px;
+.g-maps {
+  width: 100%;
+  height: 100%;
+}
+
+
+.contact-us h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-us p {
+  text-align: justify;
+}
+
+.contact-us .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-us .btn {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact-us .row {
+    flex-direction: column;
   }
-  
-  .contact-us p {
-    text-align: justify;
+
+  .contact-us .col-md-6 {
+    margin-top: 30px;
   }
-  
-  .contact-us .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .contact-us .btn {
-    width: 100%;
-  }
-  
-  @media (max-width: 768px) {
-    .contact-us .row {
-      flex-direction: column;
-    }
-  
-    .contact-us .col-md-6 {
-      margin-top: 30px;
-    }
-  }
-  
+}
+
 
 .end {
-    background-color: rgb(56, 56, 56);
-    min-height: 300px;
+  background-color: rgb(56, 56, 56);
+  min-height: 300px;
 }
 
 .icon {
-    height: 40px;
+  height: 40px;
 }
 
 .icon i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 hr {
-    border: none;
-    height: 3px;
-    background-color: white;
+  border: none;
+  height: 3px;
+  background-color: white;
 }
 
 /* footer */
 .end {
-    background-color: #333333;
+  background-color: #333333;
 }
 
 .end h1,
@@ -280,102 +334,100 @@ hr {
 .end h3,
 .end p,
 .end a {
-    color: white;
+  color: white;
 }
 
 .end .row {
-    margin-right: 0;
-    margin-left: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .end .col-md-3 {
-    padding-right: 15px;
-    padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .end .icon {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
-    .end .col-md-3 {
-        margin-bottom: 30px;
-        text-align: center;
-    }
+  .end .col-md-3 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
 
-    .end .icon {
-        justify-content: center;
-    }
+  .end .icon {
+    justify-content: center;
+  }
 }
 
 
 .about-us .row img.image {
-    width: 100%;
+  width: 100%;
 }
 
 .phone img {
-    height: 10px;
-    margin-top: -90px;
+  height: 10px;
+  margin-top: -90px;
 }
 
 
-  
+
 @media screen and (max-width: 1400px) {
-    h1.test-responsive {
-        font-size: 90px;
-    }
+  h1.test-responsive {
+    font-size: 90px;
+  }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {}
 
+@media screen and (max-width: 991px) {
+  .about-us .row img.image {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 991px) {
-    .about-us .row img.image {
-      width: 100%;
-      margin-bottom: 50px;
-    }
+  .phone {
+    width: 200px;
+  }
 }
 
-@media screen and (max-width: 991px) {
-    .phone {
-        width: 200px;
-    }
-}
 @media screen and (max-width: 768px) {
-    .phone {
-        width: 100px;
-    }
+  .phone {
+    width: 100px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-    .text-phone {
-        height: 50px;
-    }
+  .text-phone {
+    height: 50px;
+  }
 }
 
 /* services card */
 
 @media (min-width: 992px) {
-    .services .card {
-      width: 100%;
-    }
+  .services .card {
+    width: 100%;
+  }
 }
 
 /* footer desktop */
 @media (min-width: 992px) {
-    .end .col-md-3 {
-      width: 25%;
-      padding-left: 40px;
-    }
+  .end .col-md-3 {
+    width: 25%;
+    padding-left: 40px;
+  }
 }
 
 /* Styling untuk tampilan desktop */
 @media (min-width: 992px) {
-    .testimoni .col-md-4 {
-      width: 33.33%;
-      margin-right: 0;
-      margin-bottom: 80px;
-    }
+  .testimoni .col-md-4 {
+    width: 33.33%;
+    margin-right: 0;
+    margin-bottom: 80px;
   }
-  
+}
