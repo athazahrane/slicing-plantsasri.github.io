@@ -68,7 +68,6 @@
   width: 350px;
 }
 
-
 /* Services */
 /* .services-information .row .col-md-4 .card {
         width: 350px;
@@ -82,9 +81,6 @@
   padding: 30px 0;
 }
 
-.services-information .card {
-  margin-bottom: 30px;
-}
 
 .services-information .card h3 {
   font-size: 20px;
@@ -114,22 +110,24 @@
 
 
 /* card phone */
-.card-phone {
-  padding-top: 80px;
-}
-
-.card-phone .container {
+.phoneBanner .container{
   border-radius: 25px;
   background: linear-gradient(149deg, #108BBC 0%, #02C39A 100%);
   height: 400px;
   width: 1100px;
-  margin-top: 50px;
   flex-wrap: wrap;
+  background-size: cover;
+  border-radius: 25px;
 }
 
-.phone {
-  width: 200px;
+.phoneBanner img {
+  max-height: 300px;
+  margin: 20px 100px;
   align-items: center;
+}
+
+.phoneBanner .text-phone {
+  margin-left: 1px;
 }
 
 /* countries */
@@ -253,8 +251,8 @@
 }
 
 /* Style untuk ukuran layar besar (contoh: desktop) */
-@media screen and (min-width: 1024px) {
-  /* .partnership-items {
+/* @media screen and (min-width: 1024px) {
+  .partnership-items {
     flex-basis: calc(20% - 2rem);
   }
 
@@ -372,6 +370,11 @@ hr {
   margin-top: -90px;
 }
 
+@media (max-width: 576px) {
+  .slider {
+    min-width: 400px;
+  }
+}
 
 
 @media screen and (max-width: 1400px) {
