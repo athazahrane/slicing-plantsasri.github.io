@@ -155,21 +155,15 @@
 
 @media screen and (max-width: 992px) {
   .plansasriBanner .container {
-      color: white;
-      margin-top: 80px;
-      border-radius: 25px;
-      background: linear-gradient(149deg, #108BBC 0%, #02C39A 100%);
-      height: 800px;
-      width: 100%;
+      height: 800px;  
       background-size: cover;
-      border-radius: 25px;
   }
 
   .phone-text-content {
       padding: 0;
       text-align: center;
-      margin-top: 40px;
-      margin-left: 10px;
+      margin-top: 500px;
+      margin-right: 110px
   }
 
   .phone-text-content h1 {
@@ -180,7 +174,7 @@
       height: 400px;
       margin-top: 0;
       margin-top: 70px;
-      margin-left: 150px;
+      margin-left: 250px;
   }
 }
 
@@ -190,13 +184,17 @@
   }
 
   .phone-text-content {
-
+      margin-bottom: 700px;
   }
 
   .phoneImage img {
       height: 100%;
       width: 100%;
-      margin-right: 9000px;
+      margin-left: 95px;
+  }
+
+  .plansasriBanner .col-md-7 {
+      height: none;
   }
 }
 /* end */
@@ -209,7 +207,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 80px;
-  height: 600px;
+  height: 400px;
 }
 
 .countries .container .row .col-md-6 h1 {
@@ -243,73 +241,18 @@
 
 
 /* testimoni */
-.testimoni-title {
-  margin-top: -130px;
+button.slick-prev.slick-arrow {
+  display: none !important;
 }
 
-.testimoni .container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+button.slick-next.slick-arrow {
+  display: none !important;
 }
 
-.testimoni-items {
-  flex: 1;
-  margin: 0 20px;
-  text-align: center;
-}
-
-.testimoni-items img {
-  width: 100px;
-  margin-bottom: 50px;
-  margin-left: 140px;
-}
-
-@media (max-width: 768px) {
-  .testimonial-item {
-      flex: 1 0 100%;
-      margin-bottom: 30px;
-  }
-
-  .testimoni-title {
-    margin-top: 50px;
-  }
-}
-
-.testimonial-item {
-  margin-top: 80px;
-}
-
-.testimonial-item img {
-  width: 100%;
-  max-width: 150px;
-}
-
-.testimonial-item p {
-  margin-top: 30px;
-}
-
-.testimonial-name {
-  color: rgb(54, 217, 65);
-  margin-left: 50px;
-}
-
-.testimoni-items br {
-  color: green;
-}
-
-@media (max-width: 768px) {
-  .testimonial-item {
-    margin-top: 30px;
-  }
-
-  .testimonial-item img {
-    margin-bottom: 20px;
-  }
-
-  .testimonial-item p {
-    width: 100%;
-  }
+@media screen and (max-width: 768px) {
+    .testimonial h1 {
+        margin-top: 200px;
+    }
 }
 /* end */
 
