@@ -81,14 +81,15 @@
 }
 
 @media screen and (max-width: 1029px) {
-  .ourService .container {
-    flex-wrap: wrap;
+  .content-service {
+     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 992px) {
   .content-service {
-      margin-left: 120px;
+      justify-content: center;
+      align-items: center;
   }
 
   .ourService .container {
@@ -99,7 +100,8 @@
 
 @media screen and (max-width: 768px) {
   .content-service{
-      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
       margin-left: 0;
   }
 
@@ -166,19 +168,19 @@
   .phone-text-content {
       padding: 0;
       text-align: center;
-      margin-top: 500px;
-      margin-right: 100px;
+      margin-top: 40px;
+      margin-left: 10px;
   }
 
   .phone-text-content h1 {
-      font-size: 50px;
+      font-size: 35px;
   }
 
   .phoneImage img {
       height: 400px;
       margin-top: 0;
       margin-top: 70px;
-      margin-left: 250px;
+      margin-left: 150px;
   }
 }
 
@@ -194,7 +196,7 @@
   .phoneImage img {
       height: 100%;
       width: 100%;
-      margin-right: 500px;
+      margin-right: 9000px;
   }
 }
 /* end */
@@ -228,8 +230,13 @@
   margin: 3px 3px;
 }
 
-.countries-items:last-child {
-  /* width: 600px; */
+@media screen and (max-widht: 768px) {
+  .countries .container .row .col-md-6 h1 {
+      text-align: center;
+      color: wheat;
+  }
+
+
 }
 /* end */
 
@@ -260,8 +267,12 @@
 
 @media (max-width: 768px) {
   .testimonial-item {
-    flex: 1 0 100%;
-    margin-bottom: 30px;
+      flex: 1 0 100%;
+      margin-bottom: 30px;
+  }
+
+  .testimoni-title {
+    margin-top: 50px;
   }
 }
 
