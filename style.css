@@ -1,51 +1,13 @@
-/* Navbar */
-@media (max-width: 768px) {
-  .navbar-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-item {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .collapse.navbar-collapse {
-    display: none;
-  }
-
-  .collapse.navbar-collapse.show {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar-toggler {
-    display: block;
-  }
-}
-
-.collapse {
-  margin-left: 10vh;
-}
-
-.collapse .btn {}
-
-.content {
+/* navbar */
+.collapse .btn a {
+  text-decoration: none;
+  color: white;
   width: 100%;
-
 }
 
-.img-content {
-  width: 100%;
-  /* Mengatur lebar gambar menjadi 100% dari parent container */
-  max-width: 100%;
-  /* Batasi lebar maksimum gambar */
-  height: auto;
-  /* Menyesuaikan tinggi gambar secara proporsional */
 
-}
 
+/* slider */
 .slider {
   background-image: url('img/img2.png');
   min-height: 600px;
@@ -67,50 +29,106 @@
 .about-us .row .col-md-4 img {
   width: 350px;
 }
+/* end */
 
-/* Services */
-/* .services-information .row .col-md-4 .card {
-        width: 350px;
-        min-height: 400px;
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 2px 50px rgba(0, 0, 0, 0.1);
-        padding: 40px;
-} */
-.services {
-  padding: 30px 0;
+
+
+/* about plansasri */
+.container {
+
 }
 
-
-.services-information .card h3 {
-  font-size: 20px;
+.image-content img {
+  width: 100%;
 }
 
-.services-information .card p {
-  font-size: 16px;
+/* end */
+
+
+
+/* our service */
+.ourService {
+  text-align: center;
+  padding: 40px;
 }
 
-.services-information .image {
+.ourService .container {
+  background: #fff;
+  flex-wrap: wrap;
+  box-shadow: 0px 7px 36px rgba(0, 0, 0, 0.12), 0px 0.87651px 4.50776px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+  padding: 4rem 2rem 8rem 2rem;
+  color: #535353;
+  width: 350px;
+  max-height: 390px;
+}
+
+.ourService .container p {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content-service {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-content {
   margin-top: 30px;
 }
 
-@media (max-width: 768px) {
-  .services-information .row {
-    flex-direction: column;
-  }
-
-  .services-information .card {
-    margin: 0 auto;
-  }
-
-  .services-information .image {
-    text-align: center;
+@media screen and (max-width: 1029px) {
+  .ourService .container {
+    flex-wrap: wrap;
   }
 }
 
+@media screen and (max-width: 992px) {
+  .content-service {
+      margin-left: 120px;
+  }
 
-/* card phone */
-.phoneBanner .container{
+  .ourService .container {
+      width: 300px;
+      margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-service{
+      flex-wrap: wrap;
+      margin-left: 0;
+  }
+
+  .ourService .container {
+      color: #535353;
+      width: 300px;
+      margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .ourService .container {
+      width: 100%;
+  }
+}
+/* end */
+
+
+/* phone banner */
+.plansasriBanner {
+  position: relative;
+  z-index: 3;
+  margin-top: 90px;
+}
+
+
+.plansasriBanner .container {
+  color: white;
+  margin-top: 80px;
   border-radius: 25px;
   background: linear-gradient(149deg, #108BBC 0%, #02C39A 100%);
   height: 400px;
@@ -120,28 +138,108 @@
   border-radius: 25px;
 }
 
-.phoneBanner img {
-  max-height: 300px;
+.phoneImage img {
+  height: 300px;
   margin: 20px 100px;
+  margin-top: -45px;
   align-items: center;
 }
 
-.phoneBanner .text-phone {
-  margin-left: 1px;
+.phone-text-content {
+  margin-top: 70px;
+  margin-left: -170px;
+  padding: 40px;
 }
+
+@media screen and (max-width: 992px) {
+  .plansasriBanner .container {
+      color: white;
+      margin-top: 80px;
+      border-radius: 25px;
+      background: linear-gradient(149deg, #108BBC 0%, #02C39A 100%);
+      height: 800px;
+      width: 100%;
+      background-size: cover;
+      border-radius: 25px;
+  }
+
+  .phone-text-content {
+      padding: 0;
+      text-align: center;
+      margin-top: 500px;
+      margin-right: 100px;
+  }
+
+  .phone-text-content h1 {
+      font-size: 50px;
+  }
+
+  .phoneImage img {
+      height: 400px;
+      margin-top: 0;
+      margin-top: 70px;
+      margin-left: 250px;
+  }
+}
+
+@media screen and (max-widht: 768px) {
+  .plansasriBanner .container {
+      border-radius: 25px;
+  }
+
+  .phone-text-content {
+
+  }
+
+  .phoneImage img {
+      height: 100%;
+      width: 100%;
+      margin-right: 500px;
+  }
+}
+/* end */
+
+
 
 /* countries */
 .countries {
   background-image: url('img/shapes.png');
   background-repeat: no-repeat;
   background-size: contain;
+  margin-top: 80px;
+  height: 600px;
+}
+
+.countries .container .row .col-md-6 h1 {
+  margin-top: 70px;
+}
+
+.countries .container .row .col-md-6 .countries-items:first-child {
+  margin-top: 80px;
+}
+
+.countries h1 {
+  margin-top: 30px;
+  color: #535353;
+  font-size: 50px;
 }
 
 .countries-items img {
   margin: 3px 3px;
 }
 
+.countries-items:last-child {
+  /* width: 600px; */
+}
+/* end */
+
+
+
 /* testimoni */
+.testimoni-title {
+  margin-top: -130px;
+}
+
 .testimoni .container {
   display: flex;
   justify-content: center;
@@ -157,7 +255,7 @@
 .testimoni-items img {
   width: 100px;
   margin-bottom: 50px;
-  margin-left: 110px;
+  margin-left: 140px;
 }
 
 @media (max-width: 768px) {
@@ -166,7 +264,6 @@
     margin-bottom: 30px;
   }
 }
-
 
 .testimonial-item {
   margin-top: 80px;
@@ -203,6 +300,9 @@
     width: 100%;
   }
 }
+/* end */
+
+
 
 /* Partnership */
 .partnership .container {
@@ -229,13 +329,17 @@
 
 @media screen and (max-width: 768px) {
   .partnership-items {
-    margin: 0.7rem 0.5rem;
+    /* margin: 0.7rem 0.5rem;
     padding: 0.8rem 1rem;
-    flex-basis: calc(50% - 2rem); /* Mengatur lebar elemen agar 2 elemen per baris */
+    flex-basis: calc(50% - 2rem); */
   }
 
   .partnership img {
     width: 30px;
+  }
+
+  .items {
+      flex-wrap: wrap;
   }
 }
 
@@ -249,17 +353,9 @@
     width: 40px;
   }
 }
+/* end */
 
-/* Style untuk ukuran layar besar (contoh: desktop) */
-/* @media screen and (min-width: 1024px) {
-  .partnership-items {
-    flex-basis: calc(20% - 2rem);
-  }
 
-  .partnership img {
-    width: 50px;
-  }
-} */
 
 /* contact */
 .contact-us {
@@ -321,6 +417,8 @@ hr {
   height: 3px;
   background-color: white;
 }
+/* end */
+
 
 /* footer */
 .end {
@@ -345,92 +443,45 @@ hr {
   padding-left: 15px;
 }
 
+.image-text-plantsasri img{
+  width: 250px;
+  margin-left: -30px;
+  margin-bottom: 10px;
+}
+
+.plantsasri-com {
+  color: white;
+}
+
+.usefull-links {
+  margin-left: 50px;
+}
+
 .end .icon {
   margin-top: 10px;
 }
 
+@media screen and (max-width: 992px) {
+
+}
+
 @media (max-width: 768px) {
+  .image-text-plantsasri img {
+      width: 100%;
+      max-width: 440px;
+      margin-left: 0px;
+  }
+
+  .usefull-links {
+      margin-left: 0px;
+  }
+
   .end .col-md-3 {
     margin-bottom: 30px;
-    text-align: center;
   }
 
   .end .icon {
-    justify-content: center;
   }
 }
+/* end */
 
-
-.about-us .row img.image {
-  width: 100%;
-}
-
-.phone img {
-  height: 10px;
-  margin-top: -90px;
-}
-
-@media (max-width: 576px) {
-  .slider {
-    min-width: 400px;
-  }
-}
-
-
-@media screen and (max-width: 1400px) {
-  h1.test-responsive {
-    font-size: 90px;
-  }
-}
-
-@media screen and (max-width: 1200px) {}
-
-@media screen and (max-width: 991px) {
-  .about-us .row img.image {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .phone {
-    width: 200px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .phone {
-    width: 100px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .text-phone {
-    height: 50px;
-  }
-}
-
-/* services card */
-
-@media (min-width: 992px) {
-  .services .card {
-    width: 100%;
-  }
-}
-
-/* footer desktop */
-@media (min-width: 992px) {
-  .end .col-md-3 {
-    width: 25%;
-    padding-left: 40px;
-  }
-}
-
-/* Styling untuk tampilan desktop */
-@media (min-width: 992px) {
-  .testimoni .col-md-4 {
-    width: 33.33%;
-    margin-right: 0;
-    margin-bottom: 80px;
-  }
-}
